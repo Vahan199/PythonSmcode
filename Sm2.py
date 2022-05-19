@@ -18,7 +18,6 @@
         
 
 # calc 
-#  միայն աշխատում է դրական միանիշ թվերի դեպքում
 # def gum(x, y):
 #     return x + y
 
@@ -57,8 +56,8 @@
 #         return f'{x} is max'
 #     else:
 #         return f'{y} is max'
-
 # print(func(5, 6))
+
 
 
 # Write a python program to sum all numbers
@@ -69,6 +68,46 @@
 
 
 # Write a python program to multiply all numbers
-def mult(x, y):
-    return x * y
-print(mult(7 , 8))
+# def mult(x, y):
+#     return x * y
+# print(mult(7 , 8))
+
+
+# 102
+# def possword(ps):
+#     while True:
+#         n = 0
+#         if len(ps) < 8:
+#             print('strong')
+#             continue
+#         else:
+#             if ps[0].isupper():
+#                 for i in ps:
+#                     if i.isdigit():
+#                         n += 1
+#             if n > 2:
+#                 print('good')
+#                 break
+#             else:
+#                 print('fals')
+#                 break
+            
+# print(possword(ps = input('Enter your possword ')))
+
+
+
+st1 = input()
+st2 = ()
+if len(st1) < 6:
+    print(len(st1))
+else:
+      for i in range(len(st1)+1):
+        if st1[i].isalpha() and st1[i+1].isalpha() and st1[i+2].isalpha():
+            print('ok1')
+        if st1[i+3].isdigit() and st1[i+4].isdigit() and st1[i+5].isdigit():
+            print('ok')
+
+
+
+
+
