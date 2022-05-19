@@ -95,17 +95,35 @@
 # print(possword(ps = input('Enter your possword ')))
 
 
+# def func(st1, st2):
+#     st1 = ()
+#     st2 = ()
+#     if len(st1) < 6:
+#         print(len(st1))
+#     else:
+#         for i in range(len(st1)+1):
+#             if st1[i].isalpha() and st1[i+1].isalpha() and st1[i+2].isalpha():
+#                 return 'ok'
+#             if st1[i+3].isdigit() and st1[i+4].isdigit() and st1[i+5].isdigit():
+#                 return 'ok'
 
-st1 = input()
-st2 = ()
-if len(st1) < 6:
-    print(len(st1))
-else:
-      for i in range(len(st1)+1):
-        if st1[i].isalpha() and st1[i+1].isalpha() and st1[i+2].isalpha():
-            print('ok1')
-        if st1[i+3].isdigit() and st1[i+4].isdigit() and st1[i+5].isdigit():
-            print('ok')
+st1 = []
+import random as r
+def func(st1):
+    a = ('a', 'b' , 'c', 'd')
+    while True:
+        a = ('a', 'b' , 'c', 'd')
+        st1 = []
+        st1 = st1.append(r.choise(a))
+        if len(st1) < 6:
+            print(len(st1))
+        else:
+            for i in range(len(st1)+1):
+                if st1[i].isalpha() and st1[i+1].isalpha() and st1[i+2].isalpha():
+                    return 'ok'
+                if st1[i+3].isdigit() and st1[i+4].isdigit() and st1[i+5].isdigit():
+                    return 'ok'
+print(func(st1 = st1.append(r.a)))
 
 
 
